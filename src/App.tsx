@@ -1,9 +1,10 @@
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/navbar/Navbar";
+import { Theme } from "./feature/theme/theme";
 
 function App() {
+  Theme();
   return (
     <>
-      <h1>Welcome to Gmail</h1>
       <Navbar />
     </>
   );

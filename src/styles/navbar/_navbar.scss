@@ -1,0 +1,78 @@
+body[class="dark"] {
+  .navbar {
+    background-color: rgb(60, 60, 60) !important;
+  }
+
+  .search-bar-key {
+    color: rgb(180, 180, 180);
+  }
+
+  .bi {
+    color: rgb(214, 214, 214) !important;
+  }
+}
+
+.navbar {
+  height: 70px;
+  background-color: rgba(128, 128, 128, 0.362);
+  .main-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .bi-person {
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px 3px;
+  }
+
+  @media screen and (max-width: 560px) {
+    height: 50px;
+    padding: 0px 20px;
+    display: flex;
+
+    .bi {
+      font-size: 1.5rem;
+    }
+
+    .search-bar-key {
+      font-size: 0.9rem;
+      font-weight: light;
+    }
+  }
+
+  @media screen and (min-width: 561px) {
+    .bi {
+      font-size: 1.6rem;
+    }
+    .logo {
+      width: 25px;
+      height: 25px;
+    }
+
+    .logo-name {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .more-options {
+    display: none;
+
+    @media screen and (min-width: 658px) {
+      display: block;
+    }
+  }
+}
